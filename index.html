@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+  </head>
+  <body>
+    <section class="music-player">
+      <div class="top">
+        <img
+          class="cover-image"
+          id="cover-image"
+          src="image/1.jpg"
+          alt="cover-1"
+        />
+        <h1 id="track-title">Title</h1>
+        <h3 id="track-author">Author</h3>
+      </div>
+      <div class="bottom">
+        <div class="progress-area">
+          <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <div class="time">
+          <span id="current-time">00:00</span>
+          <span id="total-time">00:00</span>
+        </div>
+        <div class="buttons" id="btn">
+          <button id="repeat" class="repeat-btn">
+            <i id="repeat-icon" class="fa-solid fa-repeat"></i>
+          </button>
+          <div class="main-controls">
+            <button id="previous">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button id="backward">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="play-btn" id="play">
+              <i id="play-icon" class="fa-solid fa-play"></i>
+            </button>
+            <button id="forward">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <button id="next">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
+          <button id="volume-btn">
+            <i id="volume-icon" class="fa-solid fa-volume-low"></i>
+          </button>
+          <div class="volume-panel" id="volume-panel">
+            <span id="volume-level">50%</span>
+            <input
+              class="volume-slider"
+              id="volume-slider"
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8f547d87d9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
